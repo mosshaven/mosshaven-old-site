@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentry FAQ & Правила</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; font-family:'Montserrat',sans-serif; }
+        :root {
+            --primary-green:#6A994E;
+            --light-green:#A7C957;
+            --background-dark:#1B1B1B;
+            --surface-dark:#242424;
+            --on-surface:#E0E0E0;
+            --glow-color:rgba(106,153,78,.5);
+        }
+        body { background:var(--background-dark); color:var(--on-surface); line-height:1.6; overflow-x:hidden; }
+        #particles-js { position:fixed; inset:0; z-index:-1; }
+        header { text-align:center; padding:4rem 1rem 2rem; }
+        header h1 { font-size:2.6rem; font-weight:700; background:linear-gradient(45deg,var(--light-green),var(--primary-green)); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; animation:text-glow 2s ease-in-out infinite alternate; }
+        nav { display:flex; justify-content:center; gap:1rem; flex-wrap:wrap; margin-bottom:2rem; }
+        nav a { color:var(--primary-green); text-decoration:none; padding:.6rem 1rem; border:2px solid var(--primary-green); border-radius:30px; transition:.3s; font-weight:500; }
+        nav a:hover { background:var(--primary-green); color:var(--background-dark); box-shadow:0 0 15px var(--glow-color); }
+        section { max-width:900px; background:var(--surface-dark); margin:2rem auto; padding:2rem 2.5rem; border-radius:20px; border:1px solid rgba(106,153,78,.2); }
+        section h2 { color:var(--light-green); margin-bottom:1rem; font-weight:500; }
+        section h3 { color:var(--primary-green); margin:1.4rem 0 .6rem; font-weight:500; }
+        ul,ol { padding-left:1.2rem; }
+        a.chat-link { color:var(--light-green); }
+        html { scroll-behavior:smooth; }
+        .button-link { display:inline-flex; align-items:center; gap:.7rem; padding:.8rem 1.5rem; border-radius:50px; text-decoration:none; font-weight:500; transition:.3s; background:transparent; color:var(--primary-green); border:2px solid var(--primary-green); letter-spacing:.5px; }
+        .button-link:hover { background:var(--primary-green); color:var(--background-dark); box-shadow:0 0 20px var(--glow-color); transform:translateY(-3px); }
+        /* Hide removed sections */
+        #offtop, #proposal, #court {display:none;}
+        /* Animations */
+        @keyframes text-glow { from{ text-shadow:0 0 5px var(--light-green),0 0 10px var(--light-green);} to{ text-shadow:0 0 10px var(--light-green),0 0 20px var(--primary-green);} }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <h1>База Sentry — FAQ & Правила</h1>
+        <nav>
+            <a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a>
+            <a href="#report"><i class="fas fa-lightbulb"></i> Предложка</a>
+            <a href="#rules"><i class="fas fa-gavel"></i> Правила</a>
+            <a href="#links"><i class="fas fa-link"></i> Ссылки</a>
+            
+            
+            <a href="#admins"><i class="fas fa-user-shield"></i> Набор админов</a>
+        </nav>
+    </header>
+
+    <!-- REPORT SECTION -->
+    <section id="report">
+        <h2>👀 Как правильно слить мошенника? 🚫</h2>
+        <p>Для начала&nbsp;— соберите все доказательства в одну кучу, чтобы они не были перемешаны.</p>
+        <p>После чего отправляйте их в <a class="chat-link" href="https://t.me/sentry_report" target="_blank">предложку</a>.</p>
+        <div style="margin:1rem 0; padding:1rem; border-left:4px solid var(--light-green); background:rgba(255,255,255,0.03);">
+            <p><strong>⚠️ ВАЖНО:</strong></p>
+            <ol>
+                <li>Скриншоты / видео переписки — <em>от «привет» до блокировки / игнора</em>.</li>
+                <li>Мы <strong>НЕ ПРИНИМАЕМ</strong> доказательства, если они замазаны или обрезаны.</li>
+            </ol>
+        </div>
+        <p>✅ Если человек игнорирует вас <strong>2&nbsp;дня и более</strong> — он будет занесён в базу как скаммер.</p>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq">
+        <h2>🤨 За что мы добавляем в базу?</h2>
+        <h3>Скам на NFT / звёзды</h3>
+        <p>Человек даёт вам бизнес-бота под разными предлогами, вы его привязываете, и бот крадёт подарки.</p>
+        <p>После оплаты человек сливается и/или игнорирует.</p>
+
+        <h3>Дезинформация на админа / владельца</h3>
+        <p>Пример: «mosshaven скам!11!!!1!» — без доказательств или с поддельными материалами.</p>
+
+        <h3>Попытка скама</h3>
+        <p>Отправили поддельный скриншот о переводе, фейковую криптовалюту, либо скриншот с интернета и т.д.</p>
+
+
+
+        <h3>Сомнительные услуги</h3>
+        <p>Аренда WhatsApp, «куплю ваш номер МТС/другого оператора» и подобные предложения.</p>
+
+        <h3>Взлом-ссылка</h3>
+        <p>Фейк-ссылка, например: google.ua.com, сайт полностью идентичен оригиналу.</p>
+
+        <h3>Попытка ухода с базы</h3>
+        <p>Человек пересоздаёт аккаунт.</p>
+
+        <h3>Накрученные пруфы</h3>
+        <p>Массовый сбор или покупка фиктивных отзывов для создания видимости честной работы.</p>
+        <ul>
+            <li>В пруфах много микротранзакций на 10–50 руб. без связи с реальными услугами.</li>
+            <li>Просьбы оставить отзыв, даже если ничего не сделано («Оставьте отзыв за 30 р»).</li>
+            <li>Отзывы однотипные или повторяются от одних и тех же аккаунтов.</li>
+        </ul>
+    </section>
+
+    <!-- RULES SECTION -->
+    <section id="rules">
+        <h2>👤 Правила "Предложки"</h2>
+        <ol>
+            <li>Оффтоп (сообщения не по теме чата) — <strong>запрещён</strong>❗️</li>
+            <li>Порнография, расчленёнка, прочий шок-контент — <strong>запрещено</strong>❗️</li>
+        </ol>
+        <h2>    
+        </h2>
+        <h2>👤 Правила "Суда"</h2>
+        <ol>
+            <li>Оффтоп (сообщения не по теме чата) — <strong>запрещён</strong>❗️</li>
+        </ol>
+        <p>Администрация оставляет за собой право изменять правила. Вступив в этот чат, вы соглашаетесь с данными правилами.</p>
+    </section>
+
+    <!-- OFFTOP SECTION -->
+    <section id="offtop">
+        <h2>Оффтоп</h2>
+        <p><a class="chat-link" href="https://t.me/sentry_base_chat" target="_blank">Чат оффтопа</a> — свободное общение. Правил нет, но здравый смысл приветствуется.</p>
+    </section>
+
+    <!-- PROPOSAL SECTION -->
+    <section id="proposal">
+        <h2>Предложка</h2>
+        <p>Хотите улучшить наш проект или предложить идею? Пишите в <a class="chat-link" href="https://t.me/example_proposal" target="_blank">#предложку</a> или отмечайте <strong>@admin</strong>.</p>
+    </section>
+
+    <!-- COURT SECTION -->
+    <section id="court">
+        <h2>Суд</h2>
+        <p>Возник конфликт? Соберите доказательства и создайте тему в <a class="chat-link" href="https://t.me/example_court" target="_blank">#суде</a>. Администрация рассмотрит её максимально быстро.</p>
+    </section>
+
+    <!-- LINKS SECTION -->
+    <section id="links">
+        <h2>Полезные ссылки</h2>
+
+        </div>
+        <ul>
+            <li>📣 Канал: <a class="chat-link" href="https://t.me/sentry_base" target="_blank">@sentry_base</a></li>
+            <li>🤖 Бот: <a class="chat-link" href="https://t.me/sentry_base_bot" target="_blank">@sentry_base_bot</a></li>
+            <li>✍️ Слить скамера: <a class="chat-link" href="https://t.me/sentry_report" target="_blank">@sentry_report</a></li>
+            <li>⚖️ Суд (подача апелляций): <a class="chat-link" href="https://t.me/+luLPNqtd1shiZjhh" target="_blank">Жмяк.</a></li>
+            <li>🗣 Оффтоп: <a class="chat-link" href="https://t.me/sentry_base_chat" target="_blank">@sentry_base_chat</a></li>
+            <li>🛡 Набор админов: <a class="chat-link" href="https://t.me/+5T45XyFFoQQzYzMy" target="_blank">Жмяк.</a></li>
+        </ul>
+        <div style="text-align:center; margin-bottom:1.5rem;"></div>
+        <a href="https://t.me/addlist/Ga1-tfl_fxZiMTc6" class="button-link" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-folder"></i> Папка со всеми чатами
+        </a>
+    </section>
+
+    <!-- ADMINS SECTION -->
+    <section id="admins">
+        <h2>Набор админов</h2>
+        <p>☀️ <strong>ТОЛЬКО ЗАЯВКИ!</strong> Оффтоп — бан.</p>
+        <p>Как подать заявку? Ответьте на закреплённое сообщение и укажите:</p>
+        <ul>
+            <li>Ваше имя</li>
+            <li>Сколько вам лет</li>
+            <li>Почему вы хотите стать админом в нашей базе</li>
+            <li>Сколько часов в день вы можете уделять базе</li>
+        </ul>
+    </section>
+
+    <!-- particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            particles:{ number:{value:50,density:{enable:true,value_area:800}}, color:{value:'#6A994E'}, shape:{type:'circle'}, opacity:{value:0.3,random:true,anim:{enable:true,speed:1,opacity_min:0.1,sync:false}}, size:{value:3,random:true}, line_linked:{enable:true,distance:150,color:'#6A994E',opacity:0.2,width:1}, move:{enable:true,speed:2,out_mode:'out'} },
+            interactivity:{ detect_on:'canvas', events:{ onhover:{enable:true,mode:'grab'}, onclick:{enable:true,mode:'push'}, resize:true }, modes:{ grab:{distance:140,line_linked:{opacity:0.5}}, push:{particles_nb:4} }},
+            retina_detect:true
+        });
+    </script>
+</body>
+</html>
